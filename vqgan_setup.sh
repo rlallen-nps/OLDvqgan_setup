@@ -23,4 +23,9 @@ curl -L -o checkpoints/vqgan_imagenet_f16_16384.yaml -C - 'https://heibox.uni-he
 curl -L -o checkpoints/vqgan_imagenet_f16_16384.ckpt -C - 'https://heibox.uni-heidelberg.de/d/a7530b09fed84f80a887/files/?p=%2Fckpts%2Flast.ckpt&dl=1' #ImageNet 16384
 
 chmod +x random.sh
+
+# Set git info for later commits
+git config --global user.email "rlallen.nps@gmail.com"
+git config --global user.name "vqgan"
+
 echo "Done"
