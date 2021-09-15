@@ -1,6 +1,10 @@
 # Check to see what kind of GPU the lottery has provided.
 nvidia-smi
 
+# setup git config
+git config --global user.email "rlallen.nps@gmail.com"
+git config --global user.name "vqgan"
+
 # Make executable with chmod +x vqgan_setup.sh
 
 CURRENTDIR=${pwd}
@@ -12,7 +16,7 @@ pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f ht
 pip install ftfy regex tqdm omegaconf pytorch-lightning IPython kornia imageio imageio-ffmpeg einops torch_optimizer
 
 #Clone required repositories:
-git clone 'https://github.com/nerdyrodent/VQGAN-CLIP'
+git clone 'https://github.com/rlallen-nps/vqgan-clip-my'
 cd "VQGAN-CLIP"
 git clone 'https://github.com/openai/CLIP'
 git clone 'https://github.com/CompVis/taming-transformers'
